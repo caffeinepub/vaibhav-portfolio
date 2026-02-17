@@ -1,0 +1,33 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-17T17:02:54.207Z",
+  "summary": "REQ-15 appears implemented by updating the footer to a static “© 2026 Vaibhav Gaikwad” while preserving social links. A deployment guide was added, but it is located under frontend/DEPLOYMENT.md and the provided diff content is truncated mid-section, so repo-level placement and completeness vs REQ-16 cannot be fully confirmed from the diff summary.",
+  "missing_requirements": [
+    {
+      "id": "REQ-16",
+      "requirement": "Add a repo-level publishing/deployment guide (e.g., DEPLOYMENT.md) documenting steps to build and deploy to the Internet Computer.",
+      "reason": "A deployment guide was added, but it is under frontend/DEPLOYMENT.md rather than at the repository root, and the shown content ends abruptly after “Your application will be accessible at:”, so it’s unclear from the diff whether the guide is complete and repo-level as requested.",
+      "evidence": [
+        "frontend/DEPLOYMENT.md"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Modified/added repository state/summary metadata files not requested by the BuildRequest.",
+      "reason": "The BuildRequest only asks for a footer text change and a deployment guide; it does not request updating project_state.json or adding/modifying a frontend file summary index.",
+      "evidence": [
+        "frontend-file-summaries.txt",
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.64,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/DEPLOYMENT.md",
+    "frontend/src/components/portfolio/Footer.tsx",
+    "project_state.json"
+  ]
+}

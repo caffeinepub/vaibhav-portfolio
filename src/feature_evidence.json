@@ -1,0 +1,41 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-site-footer-copyright-line-to-display-the-exact-text-2026-vaibhav-gaikwad-not-a-dynamic-year-to-match-the-portfolio-requirements-before-publishing",
+      "featureTitle": "Update the site footer copyright line to display the exact text \"© 2026 Vaibhav Gaikwad\" (not a dynamic year) to match the portfolio requirements before publishing.",
+      "files": [
+        "frontend/src/components/portfolio/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-repo-level-publishing-deployment-guide-e-g-deployment-md-that-documents-the-steps-to-build-and-deploy-the-app-to-the-internet-computer-using-the-existing-project-setup-frontend-single-motoko-canister",
+      "featureTitle": "Add a repo-level publishing/deployment guide (e.g., DEPLOYMENT.md) that documents the steps to build and deploy the app to the Internet Computer using the existing project setup (frontend + single Motoko canister).",
+      "files": [
+        "frontend/DEPLOYMENT.md"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

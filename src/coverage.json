@@ -1,0 +1,49 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-17T17:02:54.210Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-15",
+        "summary": "Update the site footer copyright line to display the exact text \"© 2026 Vaibhav Gaikwad\" (not a dynamic year) to match the portfolio requirements before publishing.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/portfolio/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/portfolio/Footer.tsx"
+        ]
+      },
+      {
+        "id": "REQ-16",
+        "summary": "Add a repo-level publishing/deployment guide (e.g., DEPLOYMENT.md) that documents the steps to build and deploy the app to the Internet Computer using the existing project setup (frontend + single Motoko canister).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/DEPLOYMENT.md"
+        ],
+        "matchedFiles": [
+          "frontend/DEPLOYMENT.md"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/DEPLOYMENT.md",
+    "frontend/src/components/portfolio/Footer.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

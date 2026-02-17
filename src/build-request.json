@@ -1,0 +1,58 @@
+{
+  "kind": "build_request",
+  "title": "Publish readiness: fix footer copyright and add deployment instructions",
+  "projectName": "Vaibhav Portfolio",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "text": "Update the site footer copyright line to display the exact text \"© 2026 Vaibhav Gaikwad\" (not a dynamic year) to match the portfolio requirements before publishing.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "publish"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer shows exactly: \"© 2026 Vaibhav Gaikwad\"",
+        "The year is not derived from the current date",
+        "No other footer content is unintentionally removed or broken (social links still work)"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Add a repo-level publishing/deployment guide (e.g., DEPLOYMENT.md) that documents the steps to build and deploy the app to the Internet Computer using the existing project setup (frontend + single Motoko canister).",
+      "target": "unknown",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "publish"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new deployment documentation file exists in the repository",
+        "The guide includes clear build and deploy commands and prerequisite steps (e.g., installing dependencies, starting dfx, deploying)",
+        "Instructions are written in English and are specific enough for a developer to follow without additional context"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under frontend/src/components/ui (read-only UI components).",
+    "Do not modify frontend immutable hook/bootstrap paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx.",
+    "Backend must remain a single Motoko actor in backend/main.mo; add migration.mo only if state upgrades are required."
+  ],
+  "nonGoals": [
+    "Adding new portfolio sections or new pages as part of publishing.",
+    "Introducing external services (email providers, third-party auth, external databases).",
+    "Changing the site’s overall visual theme beyond what is required to correct the footer copyright text."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

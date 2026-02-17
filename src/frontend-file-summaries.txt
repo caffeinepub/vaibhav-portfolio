@@ -1,0 +1,21 @@
+{
+  "frontend/src/index.css": "Global styles with dark theme OKLCH color system featuring blue/purple gradient accents, custom gradient utilities, and smooth scrolling behavior with accessibility support.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom colors for dark futuristic theme, Space Grotesk display font, glow shadows, and custom animations for reveal effects.",
+  "frontend/src/App.tsx": "Main application component that sets dark mode and renders the complete single-page portfolio layout with all sections and navigation.",
+  "frontend/src/components/portfolio/Navbar.tsx": "Sticky navigation bar with smooth scrolling, active section highlighting, and responsive mobile menu using Sheet component.",
+  "frontend/src/components/portfolio/HeroSection.tsx": "Hero section with large name display, subtitle, tagline, CTA button to projects, and AI/tech background with gradient overlay.",
+  "frontend/src/components/portfolio/AboutSection.tsx": "About Me section displaying the professional summary in a clean card layout with backdrop blur effect.",
+  "frontend/src/components/portfolio/SkillsSection.tsx": "Skills section with four categorized skill groups displayed as badge-style chips in a responsive grid layout.",
+  "frontend/src/components/portfolio/ProjectsSection.tsx": "Projects section component that imports and renders the projects array from the data module in a responsive grid with cards showing title, description, tech badges, and GitHub links.",
+  "frontend/src/components/portfolio/VideoSection.tsx": "Introduction Video section with a styled placeholder indicating future video upload with proper aspect ratio.",
+  "frontend/src/components/portfolio/ResumeSection.tsx": "Resume section with download button in a card layout that shows a coming soon alert when clicked.",
+  "frontend/src/components/portfolio/CertificationsSection.tsx": "Certifications section listing two certifications in card format with award icons.",
+  "frontend/src/components/portfolio/ContactSection.tsx": "Contact section with contact information cards and a functional contact form that opens mailto link on submission.",
+  "frontend/src/components/portfolio/Footer.tsx": "Minimal dark footer with social media icon links, static copyright text \"© 2026 Vaibhav Gaikwad\", and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/portfolio/Section.tsx": "Reusable section wrapper component providing consistent padding, max-width, and subtle tech pattern background overlay.",
+  "frontend/src/components/portfolio/Reveal.tsx": "Animation wrapper component using IntersectionObserver for scroll-triggered fade-in effects with prefers-reduced-motion support.",
+  "frontend/src/hooks/usePrefersReducedMotion.ts": "Custom hook that detects user's prefers-reduced-motion setting for accessibility-friendly animations.",
+  "frontend/src/lib/utils.ts": "Utility function for merging Tailwind CSS classes using clsx and tailwind-merge.",
+  "frontend/src/data/projects.ts": "Dedicated data module exporting a typed Project interface and projects array with inline documentation and copy-paste example for easy project additions.",
+  "frontend/DEPLOYMENT.md": "Comprehensive deployment guide covering prerequisites, local development setup, and production deployment steps for deploying the portfolio application to the Internet Computer mainnet."
+}

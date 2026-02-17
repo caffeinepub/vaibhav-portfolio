@@ -1,0 +1,39 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Publish readiness: footer copyright + deployment guide",
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "summary": "Replace dynamic footer year with the exact static text “© 2026 Vaibhav Gaikwad” while keeping all existing footer links and attribution intact.",
+      "acceptanceCriteria": [
+        "Footer shows exactly: \"© 2026 Vaibhav Gaikwad\"",
+        "The year is not derived from the current date",
+        "No other footer content is unintentionally removed or broken (social links still work)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/portfolio/Footer.tsx",
+          "operation": "modify",
+          "description": "Remove the runtime-derived year logic and render the footer copyright line as the exact static string “© 2026 Vaibhav Gaikwad”, preserving all existing social links and attribution layout. This footer already uses shadcn-ui primitives (Button/Separator); keep their usage unchanged and verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Add a developer-friendly deployment guide documenting prerequisites and the commands to build and deploy the app to the Internet Computer with the existing frontend + single Motoko canister setup.",
+      "acceptanceCriteria": [
+        "A new deployment documentation file exists in the repository",
+        "The guide includes clear build and deploy commands and prerequisite steps (e.g., installing dependencies, starting dfx, deploying)",
+        "Instructions are written in English and are specific enough for a developer to follow without additional context"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/DEPLOYMENT.md",
+          "operation": "create",
+          "description": "Create an English deployment guide covering prerequisites (DFX/Node), installing dependencies, local replica start, build, and deploy steps for the existing frontend + single Motoko canister project setup. Align steps with the repo’s ICP tooling/templates (e.g., github-export-icp-cli/build-template-react/core-infrastructure) and verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

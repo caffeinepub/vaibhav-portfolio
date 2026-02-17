@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Build a modern, professional, recruiter-focused portfolio website for AI & Data Science undergraduate Vaibhav Gaikwad with a dark futuristic theme, responsive layout, smooth scrolling animations, and sections for hero, about, skills, projects, intro video placeholder, resume download, certifications, contact form, and footer.",
+  "architectural_notes": [
+    "Use dark theme with blue/purple gradient accents and clean futuristic styling.",
+    "Ensure fully responsive design suitable for campus placement/recruiter viewing.",
+    "Include smooth scrolling animations for section transitions.",
+    "Structure Projects section to render from a single data source (e.g., JSON/TS array) to allow adding/removing projects by editing data only."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-fully-responsive-modern-portfolio-single-page-layout-with-a-dark-theme-and-blue-purple-gradient-accents-using-a-clean-futuristic-ai-focused-visual-style-consistently-across-all-sections",
+      "title": "Create a fully responsive, modern portfolio single-page layout with a dark theme and blue/purple gradient accents, using a clean futuristic AI-focused visual style consistently across all sections.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-sticky-top-navigation-with-smooth-scrolling-to-sections-hero-about-skills-projects-video-resume-certifications-contact-highlight-the-active-section-while-scrolling",
+      "title": "Implement a sticky top navigation with smooth scrolling to sections: Hero, About, Skills, Projects, Video, Resume, Certifications, Contact; highlight the active section while scrolling.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-hero-section-with-large-name-vaibhav-gaikwad-subtitle-ai-data-science-undergraduate-building-intelligent-systems-tagline-transforming-data-into-smart-solutions-using-ml-and-llms-a-primary-cta-button-labeled-view-projects-that-scrolls-to-projects-and-a-modern-ai-tech-visual-background",
+      "title": "Build the Hero section with: large name 'Vaibhav Gaikwad', subtitle 'AI & Data Science Undergraduate | Building Intelligent Systems', tagline 'Transforming data into smart solutions using ML and LLMs', a primary CTA button labeled 'View Projects' that scrolls to Projects, and a modern AI/tech visual background.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-about-me-section-that-displays-the-provided-professional-summary-text-verbatim-in-a-clean-readable-layout",
+      "title": "Add an About Me section that displays the provided professional summary text verbatim in a clean, readable layout.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-skills-section-with-categorized-badge-style-lists-for-programming-ai-ml-web-and-tools-using-the-exact-skill-items-provided",
+      "title": "Create a Skills section with categorized badge-style lists for Programming, AI / ML, Web, and Tools, using the exact skill items provided.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-projects-section-with-four-professional-project-cards-each-card-shows-title-description-tech-stack-chips-and-a-github-link-using-the-exact-urls-provided",
+      "title": "Create a Projects section with four professional project cards; each card shows title, description, tech stack chips, and a GitHub link using the exact URLs provided.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-introduction-video-section-with-a-clear-title-and-a-styled-video-placeholder-area-reserved-for-future-upload-no-external-video-integration-required",
+      "title": "Add an 'Introduction Video' section with a clear title and a styled video placeholder area reserved for future upload (no external video integration required).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-resume-section-with-a-clean-card-layout-and-a-download-resume-button-if-no-resume-file-is-present-yet-the-ui-must-still-behave-gracefully-e-g-show-coming-soon-state-or-an-inline-message",
+      "title": "Add a Resume section with a clean card layout and a 'Download Resume' button; if no resume file is present yet, the UI must still behave gracefully (e.g., show 'Coming soon' state or an inline message).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-certifications-section-listing-the-two-provided-certifications-in-a-professional-layout-list-or-cards",
+      "title": "Add a Certifications section listing the two provided certifications in a professional layout (list or cards).",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contact-section-that-displays-email-linkedin-and-github-using-the-exact-values-urls-provided-and-includes-a-simple-contact-form-name-email-message-submitting-the-form-should-provide-a-client-side-confirmation-and-can-use-a-mailto-flow-or-copy-to-clipboard-no-third-party-email-service",
+      "title": "Add a Contact section that displays email, LinkedIn, and GitHub (using the exact values/URLs provided) and includes a simple contact form (name, email, message). Submitting the form should provide a client-side confirmation and can use a mailto flow or copy-to-clipboard (no third-party email service).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-minimal-dark-footer-containing-social-icons-links-github-linkedin-email-and-the-exact-copyright-text-2026-vaibhav-gaikwad",
+      "title": "Add a minimal dark footer containing social icons/links (GitHub, LinkedIn, Email) and the exact copyright text: '© 2026 Vaibhav Gaikwad'.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-subtle-performant-scroll-triggered-animations-across-sections-e-g-fade-slide-in-and-smooth-anchor-scrolling-ensuring-accessibility-prefers-reduced-motion-respected",
+      "title": "Add subtle, performant scroll-triggered animations across sections (e.g., fade/slide in) and smooth anchor scrolling, ensuring accessibility (prefers-reduced-motion respected).",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-refactor-the-projects-section-so-the-list-of-projects-is-data-driven-from-a-dedicated-exported-data-module-instead-of-being-defined-inline-inside-frontend-src-components-portfolio-projectssection-tsx-making-it-straightforward-to-add-more-projects-by-editing-a-single-list",
+      "title": "Refactor the Projects section so the list of projects is data-driven from a dedicated exported data module (instead of being defined inline inside `frontend/src/components/portfolio/ProjectsSection.tsx`), making it straightforward to add more projects by editing a single list.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-clear-inline-documentation-code-comments-in-the-projects-data-module-explaining-the-required-fields-for-a-project-entry-title-description-tech-array-github-url-and-providing-a-copy-pasteable-example-entry",
+      "title": "Add clear inline documentation (code comments) in the projects data module explaining the required fields for a project entry (title, description, tech array, GitHub URL) and providing a copy-pasteable example entry.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-footer-copyright-line-to-display-the-exact-text-2026-vaibhav-gaikwad-not-a-dynamic-year-to-match-the-portfolio-requirements-before-publishing",
+      "title": "Update the site footer copyright line to display the exact text \"© 2026 Vaibhav Gaikwad\" (not a dynamic year) to match the portfolio requirements before publishing.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-repo-level-publishing-deployment-guide-e-g-deployment-md-that-documents-the-steps-to-build-and-deploy-the-app-to-the-internet-computer-using-the-existing-project-setup-frontend-single-motoko-canister",
+      "title": "Add a repo-level publishing/deployment guide (e.g., DEPLOYMENT.md) that documents the steps to build and deploy the app to the Internet Computer using the existing project setup (frontend + single Motoko canister).",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Implement dark, futuristic AI-focused portfolio website theme with blue/purple gradient accents and fully responsive layout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Create Hero section with name, subtitle, tagline, CTA 'View Projects', and modern AI/tech background",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add About Me section with provided professional summary text",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add Skills section with categorized badge-style lists (Programming, AI/ML, Web, Tools)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add Projects section with professional project cards (4 projects) including title, description, tech stack, and GitHub links",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add Intro Video section with placeholder for future video upload",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Add Resume section with clean card layout and 'Download Resume' button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Add Certifications section listing specified certifications",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Add Contact section with email/LinkedIn/GitHub and a simple contact form",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Add minimal dark footer with social icons and copyright © 2026 Vaibhav Gaikwad",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Add smooth scrolling animations across the site for a polished modern feel",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Make Projects section easily extensible (data-driven) so more projects can be added without rewriting layout",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Vaibhav Portfolio",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
